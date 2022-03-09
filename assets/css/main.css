@@ -5,6 +5,8 @@
     min-height: 100vh;
     background: var(--white);
     transition: .5s;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 .main.active{
     width: calc(100% - 65px);   
@@ -14,10 +16,14 @@
     width: 100%;
     height: 60px;
     display: flex;
-    background: var(--blue1);
+    background: var(--white);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    
 }
 
 .toggle{
@@ -44,7 +50,7 @@
     border-radius: 50px;
     padding: 0 20px;
     outline: none;
-    border: 1px solid var(--green1);
+    border: 1px solid var(--black2);
     padding-left: 40px;
     font-size: 18px;
 }

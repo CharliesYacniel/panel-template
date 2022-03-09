@@ -15,7 +15,7 @@
     --blue2:#212258;
     --white:white;
     --black1:#030506;
-    --black2:#111111;
+    --black2:#8e9091;
 
     --blue: var(--blue2);
     --grey:grey;
@@ -40,7 +40,7 @@ width: 300px;
 height: 100%;
 background: var(--blue);
 transition: 0.5s;
-overflow: hidden;
+overflow-y: scroll;
 
 }
 .navigation.active
@@ -51,9 +51,15 @@ width: 65px;
 .navigation ul
 {
     position: absolute;
-    top:0;
+    top: 60px;
+    left: 0;
+    width: 100%;
     left:0;
     width:100%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 .navigation ul li
@@ -73,15 +79,21 @@ width: 65px;
 {
 background: var(--white);
 }
+.navigation ul li:first-child{
+    
+}
 .navigation ul li:nth-child(1){
-    margin-bottom:40px;
-    pointer-events:none;
-    /* font-size: 25px; */
-    /* letter-spacing: 0px; */
+    pointer-events: none;
     text-transform: uppercase;
     color: var(--green1);
     padding: 0;
-    /* font-weight: 900; */
+    position: fixed;
+    top: 0;
+    background: var(--blue2);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 1000;
+    width: 300px;
 }
 .navigation ul li a{
     position: relative;
