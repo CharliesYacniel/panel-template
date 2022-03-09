@@ -85,6 +85,18 @@
 .details .recentOrders table thead tr td:nth-child(3) {
     text-align: center;
 }
+
+
+.details .recentOrders table tr:hover td:first-child {    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.details .recentOrders table tr:hover td:last-child {   
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 .status{
     padding: 2px 4px;
     background: #8de02c;
@@ -111,3 +123,4 @@
 .paid{
     background: #eb791c;
 }
+
