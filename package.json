@@ -1,0 +1,23 @@
+{
+  "name": "panel-template",
+  "version": "1.0.0",
+  "description": "mi template de paneles administrativos",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharliesYacniel/panel-template.git"
+  },
+  "keywords": [
+    "panel",
+    "template"
+  ],
+  "author": "Charlies Yacniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharliesYacniel/panel-template/issues"
+  },
+  "homepage": "https://github.com/CharliesYacniel/panel-template#readme"
+}
