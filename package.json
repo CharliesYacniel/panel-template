@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/CharliesYacniel/panel-template/issues"
   },
-  "homepage": "https://github.com/CharliesYacniel/panel-template#readme"
+  "homepage": "https://github.com/CharliesYacniel/panel-template#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
