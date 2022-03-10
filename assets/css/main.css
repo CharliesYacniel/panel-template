@@ -12,16 +12,20 @@
     width: calc(100% - 65px);   
     left: 65px;
 }
+.main.active .topbar{
+    width: calc(100% - 65px);   
+}
 .topbar{
-    width: 100%;
+    width: calc(100% - 300px);
     height: 60px;
     display: flex;
     background: var(--white);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    z-index: 1000;
-    position: absolute;
+    transition: .5s;
+    z-index: 10;
+    position: fixed;
     top: 0;
     
 }

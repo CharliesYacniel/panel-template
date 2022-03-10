@@ -56,6 +56,7 @@
     .toggle{
         z-index: 1001;
     }
+    
     .main.active .toggle{
         position: fixed;
         right: 0;

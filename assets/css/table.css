@@ -98,13 +98,14 @@
 
 
 .status{
-    padding: 2px 4px;
-    min-width: 150px;
+    padding: 2px 10px;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
     background: #8de02c;
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 14px;
-    font-weight: 500;
 }
 .delivered{
     background: #8de02c;
