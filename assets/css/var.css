@@ -1,0 +1,12 @@
+:root{
+    --green1: #93EA20;
+    --green2: #3CB147;
+    --blue1:#004550;
+    --blue2:#212258;
+    --white:white;
+    --black1:#030506;
+    --black2:#8e9091;
+
+    --blue: var(--blue2);
+    --grey:grey;
+}

@@ -15,6 +15,69 @@
 .main.active .topbar{
     width: calc(100% - 65px);   
 }
+
+.breadcrumb {
+    margin: 1rem 0;
+    padding: .8em 20px;
+    border-radius: .3rem;
+    /* background: rgba(255, 255, 255, .8); */
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .breadcrumb ol li a  {
+      color: var(--blue);
+      text-decoration: none;
+  }
+  .breadcrumb ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .breadcrumb li {
+    display: inline-block;
+  }
+  
+  .breadcrumb li + li::before {
+    display: inline-block;
+    margin: 0 0.5em;
+    transform: rotate(15deg);
+    border-right: 1px solid var(--blue);
+    height: 0.8em;
+    content: "";
+  }
+  
+  .breadcrumb [aria-current="page"] {
+    color: var(--green2);
+    font-weight: 700;
+    /* text-decoration: unset; */
+  }
+  
+  
+
+/* .container-breadcrumb{
+    width: calc(100% - 300px);
+    height: 30px;
+}
+ol.breadcrumb{
+    display: flex;
+}
+.breadcrumb-item{
+    margin-left: 20px;
+    position: absolute;
+}
+.breadcrumb-item::after{
+    content: " / ";
+    position: relative;
+}
+
+.breadcrumb-item li{
+    list-style: none;
+}
+.breadcrumb-item a{
+    color: var(--black2);
+} */
+
 .topbar{
     width: calc(100% - 300px);
     height: 60px;
