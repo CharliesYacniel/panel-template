@@ -1,0 +1,128 @@
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    /* min-height: 500px; */
+}
+.details .recentOrders{
+    position: relative;
+    display:grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2 {
+    font-weight: 600;
+    color: var(--green2);
+}
+
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table{
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 10px;
+
+}
+
+
+.details table thead td{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.details .recentOrders table tr
+{
+ color: var(--black1);
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details  .recentOrders table  tr:last-child{
+ border-bottom: none;
+}
+.details .recentOrders table tbody tr:hover{
+ background: var(--blue1);
+ color: var(--white);
+}
+.details .recentOrders table tbody tr td {
+    padding: 15px;
+}
+/* .details table thead tr td {
+    padding: 15px;
+} */
+.details .recentOrders table thead tr td:last-child{
+    text-align: end;
+}
+.details .recentOrders table tbody tr td:last-child{
+    text-align: end;
+}
+.details .recentOrders table tbody tr td:nth-child(2) {
+    text-align: end;
+}
+.details .recentOrders table thead tr td:nth-child(2) {
+    text-align: end;
+}
+.details .recentOrders table tbody tr td:nth-child(3) {
+    text-align: center;
+}
+.details .recentOrders table thead tr td:nth-child(3) {
+    text-align: center;
+}
+
+
+.details .recentOrders table tr:hover td:first-child {    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.details .recentOrders table tr:hover td:last-child {   
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.status{
+    padding: 2px 10px;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 14px;
+}
+.delivered{
+    background: #8de02c;
+}
+.analysis{
+    background: #6594f8;
+}
+.denied{
+    background: #f73838;
+}
+.approved{
+    background: #284902;
+}
+.received{
+    background: #a2a59e;
+}
+.paid{
+    background: #eb791c;
+}
+

@@ -1,0 +1,35 @@
+.bootomBar{
+    width: calc(100% - 300px);
+    height: 30px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.main.active .bootomBar{
+    width: calc(100% - 65px);
+}
+.copyRigth{
+    font-size: 10px;
+    color: var(--black2);
+    letter-spacing: 1px;
+}
+.year{
+    color: var(--black1);
+}
+.by{
+    font-size: 10px;
+    color: var(--black2);
+    letter-spacing: 1px;
+}
+.by a{
+    text-decoration: none;
+    color: var(--green2);
+}
