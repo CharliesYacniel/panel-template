@@ -58,8 +58,10 @@
  border-bottom: none;
 }
 .details .recentOrders table tbody tr:hover{
- background: var(--blue1);
- color: var(--white);
+ /* background: var(--blue1); */
+ background: #0045503d;
+ color: var(--green2);
+ cursor: pointer;
 }
 .details .recentOrders table tbody tr td {
     padding: 15px;

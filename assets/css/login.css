@@ -49,7 +49,9 @@ height: 80px;
     justify-content: center;
     align-items: center;
 }
-  
+.col-cards{
+    flex-direction: row;
+}
   .card {
     padding: 20px;
     background: var(--blue2);
@@ -92,6 +94,7 @@ height: 80px;
 .form-group-item{
     margin: 15px 0;
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 .form-group-item a{
@@ -112,15 +115,19 @@ height: 80px;
     outline: none;
     border: 0.5px solid var(--green1);
     padding-left: 40px;
-    font-size: 18px;
+    /* color: var(grey); */
+    font-size: 14px;
 }
 .form-group-item ion-icon{
     position: absolute;
-    top: 5px;
-    left: 6px;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
     color: grey;
     font-size: 2em;
-    }
+}
+
 .card.info{
     height: 100%;
     margin: 20px;
@@ -142,6 +149,18 @@ height: 80px;
       
     }
       
+ol{
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ol li{
+    list-style: square;
+    padding: 5px 0;
+    color: var(--green1);
+}
+
 
 /* footer */
 .footer{
@@ -164,5 +183,7 @@ align-items: center;
         grid-template-columns: repeat(1,1fr);
         
     }
-   
+   .col-cards{
+    flex-direction: column;
+   }
 }
