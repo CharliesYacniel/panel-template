@@ -1,5 +1,5 @@
 # `Charlies Admin`
-![CharliesTODOList](https://github.com/CharliesYacniel/panel-template/blob/develop/assets/img/screen.png)
+![CharliesTODOList](https://github.com/CharliesYacniel/panel-template/blob/develop/assets/img/screen.gif)
 Hello, welcome to Charlies todo list, a web application that helps you register your pending tasks and carry out actions on your tasks.
 Go right there by clicking [here](https://charliesyacniel.github.io/charlies-todo-list/)
 # Demo url
