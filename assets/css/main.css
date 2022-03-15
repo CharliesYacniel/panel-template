@@ -7,6 +7,8 @@
     transition: .5s;
     padding-top: 60px;
     padding-bottom: 30px;
+    /* transition: background 0.5s ease-in; */
+
 }
 .main.active{
     width: calc(100% - 65px);   
@@ -20,7 +22,6 @@
     margin: 1rem 0;
     padding: .8em 20px;
     border-radius: .3rem;
-    /* background: rgba(255, 255, 255, .8); */
     white-space: nowrap;
     overflow-x: auto;
   }
@@ -50,33 +51,11 @@
   .breadcrumb [aria-current="page"] {
     color: var(--green2);
     font-weight: 700;
-    /* text-decoration: unset; */
   }
   
   
 
-/* .container-breadcrumb{
-    width: calc(100% - 300px);
-    height: 30px;
-}
-ol.breadcrumb{
-    display: flex;
-}
-.breadcrumb-item{
-    margin-left: 20px;
-    position: absolute;
-}
-.breadcrumb-item::after{
-    content: " / ";
-    position: relative;
-}
 
-.breadcrumb-item li{
-    list-style: none;
-}
-.breadcrumb-item a{
-    color: var(--black2);
-} */
 
 .topbar{
     width: calc(100% - 300px);
@@ -90,7 +69,7 @@ ol.breadcrumb{
     z-index: 10;
     position: fixed;
     top: 0;
-    
+    /* transition: background 0.5s ease-in; */
 }
 
 .toggle{
@@ -105,6 +84,10 @@ ol.breadcrumb{
     cursor: pointer;
 }
 
+.title-panel{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 
 .search label  {
@@ -126,6 +109,21 @@ position: absolute;
 top: -8px;
 left: 6px;
 font-size: 2em;
+}
+
+
+
+.user-container{
+    display: inline-flex;
+    align-items: center;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 12px;
+    color: var(--black2);;
+    padding-right: 15px;
 }
 
 .userImg{

@@ -19,13 +19,26 @@
 
     --blue: var(--blue2);
     --grey:grey;
-    
+
+
+    --light-0: #f8f9fa;
+    --light-1: #e9ecef;
+    --light-2: #dee2e6;
+
+    --dark-0: #495057;
+    --dark-1: #343a40;
+    --dark-2: #212529;
 }
 body
 {
     min-height: 100vh;
     overflow-x: hidden;
 }
+/* body.dark{
+    background: var(--dark-2);
+} */
+
+
 
 .container
 {
