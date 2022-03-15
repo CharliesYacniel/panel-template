@@ -33,11 +33,12 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/char.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/darkmode.css">
     
 </head>
 <body>
     <div class="container">
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <ul>
                 <!--  -->
                 <li>
@@ -149,11 +150,15 @@
         </div><!-- fin del naveigation -->
 
         <!-- main -->
-        <div class="main">
-            <div class="topbar">
+        <div class="main" id="main">
+            <div class="topbar" id="topbar">
                 <!-- tpggle menu -->
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--  -->
+                <div class="title-panel">
+                    <h2>Panel de control</h2>
                 </div>
                 <!-- search input -->
                 <div class="search">
@@ -162,15 +167,43 @@
                         <ion-icon name="search-circle-outline"></ion-icon>
                     </label>
                 </div>
+                <!-- input dark mode -->
+                <div class="container-dark-mode">
+                    <div class="toggleWrapper">
+                        <input type="checkbox" class="dn" id="toggle-button"/>
+                        <label for="toggle-button" class="toggleDarkMode">
+                            <span class="toggle__handler">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1"></span>
+                            <span class="star star--2"></span>
+                            <span class="star star--3"></span>
+                            <span class="star star--4"></span>
+                            <span class="star star--5"></span>
+                            <span class="star star--6"></span>
+                        </label>
+                    </div>
+                    <!-- <input id="toggle-button" type="checkbox">
+                    <label for="toggle-button"><div class="sun-moon"></div></label> -->
+                </div>
+
                 <!-- image user -->
-                <div class="userImg">
-                    <img src="../assets/img/img-user.jpeg" alt="image user" srcset="image user">
+                <div class="user-container">
+                    <div class="info-container">
+                        <span>Hola Charlies Yacniel</span>
+                        <span>Hoy es <b>14/03/2022 11:44 PM</b></span>
+                    </div>
+                    <div class="userImg">
+                        <img src="../assets/img/img-user.jpeg" alt="image user" srcset="image user">
+                    </div>
                 </div>
             </div>
             <!-- migas de pan -->
             <div class="container">
-                <nav aria-label="Breadcrumb" class="breadcrumb">
-                  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <nav aria-label="Breadcrumb" class="breadcrumb" id="breadcrumb">
+                  <ol>
                     <li ><a href="#" ><span itemprop="name">Inicio</span></a></li>
                     <li ><a href="#" ><span itemprop="name">Accesos</span></a></li></li>
                     <li ><a href="#" ><span itemprop="name" aria-current="page">Roles</span></a></li>
@@ -444,7 +477,7 @@
             <!--  fin other card-->
 
             <!-- footer -->
-            <div class="bootomBar">
+            <div class="bootomBar" id="footer">
                 <!-- copyrigth -->
                 <div class="copyRigth">
                     <span class="year" id=year>2022</span> @ Derechos reservados
@@ -463,9 +496,10 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../assets/js/list.js"></script>
-    <script src="../assets/js/toggle.js"></script>
-    <script src="../assets/js/michar.js"></script>
-    <script src="../assets/js/dropdown.js"></script>
+    <script src="../src/js/list.js"></script>
+    <script src="../src/js/toggle.js"></script>
+    <script src="../src/js/michar.js"></script>
+    <script src="../src/js/dropdown.js"></script>
+    <script src="../src/js/darkmode.js"></script>
 </body>
 </html>
