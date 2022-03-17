@@ -1,10 +1,11 @@
 const toggleButton = document.getElementById('toggle-button')
 // const body = document.getElementById('body')
-const header = document.getElementById('topbar')
+const header = document.getElementById('header')
 const footer = document.getElementById('footer')
-const sidebard = document.getElementById('navigation')
+const sidebard = document.getElementById('sidebar')
 const mainDark = document.getElementById('main')
 const breadcrumb = document.getElementById('breadcrumb')
+const buttonDarkMode = document.getElementById('dark-mode')
 
 toggleButton.addEventListener('change', () => {
     // document.body.classList.toggle('dark')
@@ -13,4 +14,5 @@ toggleButton.addEventListener('change', () => {
     sidebard.classList.toggle('dark')
     footer.classList.toggle('dark')
     breadcrumb.classList.toggle('dark')
+    buttonDarkMode.classList.toggle('dark')
   })

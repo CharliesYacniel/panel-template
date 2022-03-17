@@ -1,4 +1,4 @@
-let list = document.querySelectorAll(".navigation li");
+let list = document.querySelectorAll(".sidebard li");
 
 function activeLink(){
     list.forEach((item)=>item.classList.remove('hovered'));

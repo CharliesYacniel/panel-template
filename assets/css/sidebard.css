@@ -1,52 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
-    font-family: 'Ubuntu', sans-serif;
-}
-:root{
-
-    
-    --green1: #93EA20;
-    --green2: #3CB147;
-    --blue1:#004550;
-    --blue2:#212258;
-    --white:white;
-    --black1:#030506;
-    --black2:#8e9091;
-
-    --blue: var(--blue2);
-    --grey:grey;
 
 
-    --light-0: #f8f9fa;
-    --light-1: #e9ecef;
-    --light-2: #dee2e6;
-
-    --dark-0: #495057;
-    --dark-1: #343a40;
-    --dark-2: #212529;
-}
-body
-{
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-/* body.dark{
-    background: var(--dark-2);
-} */
-
-
-
-.container
-{
-    position: relative;
-    width: 100%;
-}
-
-.navigation
+.sidebar
 {
 position: fixed;
 width: 300px;
@@ -56,12 +10,12 @@ transition: 0.5s;
 overflow-y: scroll;
 
 }
-.navigation.active
+.sidebar.active
 {
 width: 65px;
 }
 
-.navigation ul
+.sidebar ul
 {
     position: absolute;
     top: 60px;
@@ -76,7 +30,7 @@ width: 65px;
     display: none;
 }
 
-.navigation ul li
+.sidebar ul li
 {
     position : relative;
     width : 100%;
@@ -88,15 +42,15 @@ width: 65px;
 
 }
 
-.navigation ul li:hover,
-.navigation ul li.hovered
+.sidebar ul li:hover,
+.sidebar ul li.hovered
 {
 background: var(--white);
 }
-.navigation ul li:first-child{
+.sidebar ul li:first-child{
     
 }
-.navigation ul li:nth-child(1){
+.sidebar ul li:nth-child(1){
     pointer-events: none;
     text-transform: uppercase;
     color: var(--green1);
@@ -109,7 +63,7 @@ background: var(--white);
     z-index: 1000;
     width: 300px;
 }
-.navigation ul li a{
+.sidebar ul li a{
     position: relative;
     display: block;
     width: 100%;
@@ -117,14 +71,14 @@ background: var(--white);
     text-decoration: none;
     color:var(--white);
 }
-.navigation ul li:hover a,
-.navigation ul li.hovered a
+.sidebar ul li:hover a,
+.sidebar ul li.hovered a
 {
   color: var(--green2);
   font-weight: bold;
   
 }
-.navigation ul li a .icon{
+.sidebar ul li a .icon{
 position: relative;
 display: block;
 min-width: 60px;
@@ -133,10 +87,10 @@ line-height: 70px;
 text-align: center;
 }
 
-.navigation ul li a .icon ion-icon {
+.sidebar ul li a .icon ion-icon {
 font-size: 1.75em;
 }
-.navigation ul li a .title{
+.sidebar ul li a .title{
 position: relative;
 display: block;
 padding: 0 10px;
@@ -147,8 +101,8 @@ white-space: nowrap;
 }
 
 /* curva hacia afuera */
-.navigation ul li:hover a::before,
-.navigation ul li.hovered a::before
+.sidebar ul li:hover a::before,
+.sidebar ul li.hovered a::before
 {
 content: "";
 position: absolute;
@@ -161,8 +115,8 @@ background: transparent;
 box-shadow: 35px 35px 0 10px var(--white);
 pointer-events: none;
 }
-.navigation ul li:hover a::after,
-.navigation ul li.hovered a::after
+.sidebar ul li:hover a::after,
+.sidebar ul li.hovered a::after
 {
 content: "";
 position: absolute;

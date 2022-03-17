@@ -1,0 +1,35 @@
+.container-breadcrumb .breadcrumb {
+    margin: 1rem 0;
+    padding: .8em 20px;
+    border-radius: .3rem;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .container-breadcrumb .breadcrumb ol li a  {
+      color: var(--blue);
+      text-decoration: none;
+  }
+  .container-breadcrumb .breadcrumb ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .container-breadcrumb .breadcrumb li {
+    display: inline-block;
+  }
+  
+  .container-breadcrumb .breadcrumb li + li::before {
+    display: inline-block;
+    margin: 0 0.5em;
+    transform: rotate(15deg);
+    border-right: 1px solid var(--blue);
+    height: 0.8em;
+    content: "";
+  }
+  
+  .container-breadcrumb .breadcrumb [aria-current="page"] {
+    color: var(--green2);
+    font-weight: 700;
+  }
+  

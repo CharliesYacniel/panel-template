@@ -1,8 +1,8 @@
 @media (max-width:991px){
-    .navigation{
+    .sidebar{
         left:-300px
     }
-    .navigation.active{
+    .sidebar.active{
         width: 300px;
         left:0;
     }
@@ -14,7 +14,7 @@
         
         left: 300px;
     }
-    .cardBox{
+    .main-card-container{
         grid-template-columns: repeat(2,1fr);
     }
 } 
@@ -33,7 +33,7 @@
 }
 
 @media (max-width:480px){
-    .cardBox{
+    .main-card-container{
         grid-template-columns: repeat(1,1fr);
     }
     .carHeader h2{
@@ -42,13 +42,13 @@
     .user{
         min-width: 40px;
     }
-    .navigation
+    .sidebar
     {
         width: 100%;
         left: -100%;
         z-index: 1000;
     }
-    .navigation.active
+    .sidebar.active
     {
         width: 100%;
         left: 0;
