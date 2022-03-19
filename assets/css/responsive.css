@@ -1,6 +1,10 @@
+/* dispositivos mediano */
 @media (max-width:991px){
     .sidebar{
         left:-300px
+    }
+    .header{
+        width: 100%;
     }
     .sidebar.active{
         width: 300px;
@@ -19,20 +23,44 @@
     }
 } 
 
-
+/* dispositivo  */
 @media (max-width:768px){
-    .details{
-        grid-template-columns: repeat(1,1fr);
+    .header .search{
+        display: none;
     }
-    .recentOrders{
-        overflow: auto;
+    .card-grid-two-columns {
+        grid-template-columns: initial;
+    grid-gap: initial;
+    }
+    .card-grid-two-columns .card{
+        margin-bottom: 40px;
+    }
+    .stats-container {
+        grid-template-columns: initial !important;
+    }
+    .card-elements {
+        flex-direction: column;
+        margin-top: 10px;
     }
     .status {
         white-space: nowrap;
     }
 }
-
+/* dispositivos moviles */
 @media (max-width:480px){
+    .container-dark-mode{
+        display: none;
+    }
+    .title-panel{
+        font-size: 10px;
+    white-space: nowrap;
+    }
+
+    .card-title {
+        left: 5% !important; 
+        width: 90% !important;
+    }
+
     .main-card-container{
         grid-template-columns: repeat(1,1fr);
     }
