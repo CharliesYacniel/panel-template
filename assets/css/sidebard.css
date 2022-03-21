@@ -1,0 +1,186 @@
+.sidebar{
+position: fixed;
+width: 300px;
+height: 100%;
+background: var(--blue);
+transition: 0.5s ;
+overflow-y: scroll;
+
+}
+.sidebar.active{
+width: 65px;
+}
+
+.sidebar ul{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    left:0;
+    width:100%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar ul li.list-item-father{
+    position : relative;
+    width : 100%;
+    list-style:none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.sidebar ul li.list-item-father:hover,
+.sidebar ul li.list-item-father.hovered{
+background: var(--white);
+}
+
+.sidebar .img-logo{
+    height: 40px;
+    width: 40px;
+    margin: 5px 13px;
+}
+.sidebar .logo-company{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background: var(--blue);
+    transition: .5s ease-in;
+}
+.sidebar.active .logo-company{
+    background: var(--green1);
+}
+.sidebar .name-company{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--white);
+    white-space: nowrap;
+}
+.sidebar ul li.list-item-father a.a-item-father{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:var(--white);
+}
+.sidebar ul li.list-item-father:hover a.a-item-father,
+.sidebar ul li.list-item-father.hovered a.a-item-father
+{
+  color: var(--green2);
+  font-weight: bold;
+  
+}
+.sidebar ul li.list-item-father a.a-item-father .icon{
+position: relative;
+display: block;
+min-width: 60px;
+height: 60px;
+line-height: 70px;
+text-align: center;
+margin-right: 5px;
+}
+
+.sidebar ul li.list-item-father a.a-item-father .icon ion-icon {
+font-size: 1.75em;
+}
+.sidebar ul li.list-item-father a .a-item-father.title{
+position: relative;
+display: block;
+padding: 0 10px;
+height: 60px;
+line-height: 60px;
+text-align: start;
+white-space: nowrap;
+}
+
+/* curva hacia afuera */
+.sidebar ul li.list-item-father:hover a.a-item-father::before,
+.sidebar ul li.list-item-father.hovered a.a-item-father::before
+{
+content: "";
+position: absolute;
+right: 0;
+top: -50px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background: transparent;
+box-shadow: 35px 35px 0 10px var(--white);
+pointer-events: none;
+}
+.sidebar ul li.list-item-father:hover a.a-item-father::after,
+.sidebar ul li.list-item-father.hovered a.a-item-father::after
+{
+content: "";
+position: absolute;
+right: 0;
+bottom: -50px;
+width: 50px;
+height: 50px;
+background: transparent;
+border-radius: 50%;
+box-shadow: 35px -35px 0 10px var(--white);
+pointer-events: none;
+}
+
+
+
+/* Acordeon */
+.accordion {
+    transition: 0.4s;
+  }
+  
+  .sidebar ul li.list-item-father:hover .accordion:after{
+    content: '\002B';
+    color: var(--green1);
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: var(--green2);
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+  }
+  .accordion:hover:after{
+    color: var(--green1);
+  }
+
+  .panel {
+    background: var(--blue1);
+    border-radius: 0px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel a{
+      color:var(--white);
+      text-decoration: none;
+      padding: 10px 0px 10px 50px;
+      display: flex;
+      align-items: center;
+  }
+  .panel a:hover{
+    color:var(--blue);
+    background: var(--green1);
+}
+.panel a .title{
+    padding-left: 15px;
+}
+
+.sidebar.active .panel a{
+    padding-left: 20px;
+}
+.sidebar.active .accordion:after{
+        content: '\002B';
+        right: 8px;
+}

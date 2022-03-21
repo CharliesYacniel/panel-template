@@ -1,5 +1,12 @@
+.stats-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+}
 canvas{
-    width: 100% !important;
-    height: 100% !important;
-    padding: 30px;
+    height: 600px !important;
+    width: 600px !important;
+}
+.stats-item{
+       padding: 10px;
+       background: var(--light-0);
 }

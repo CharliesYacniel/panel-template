@@ -1,4 +1,3 @@
-
 const data = {
     labels: [
       'Red',
@@ -9,7 +8,12 @@ const data = {
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [11, 16, 7, 34, 14],
+      data: [
+        Math.floor(Math.random()*394)+1, 
+        Math.floor(Math.random()*394)+1, 
+        Math.floor(Math.random()*394)+1, 
+        Math.floor(Math.random()*394)+1, 
+        Math.floor(Math.random()*394)+1],
       backgroundColor: [
         'rgb(255, 99, 132)',
         'rgb(75, 192, 192)',

@@ -24,12 +24,14 @@
     <meta name="theme-color" content="#ffffff">
     <title>Charlies Yacniel</title>
     <link rel="stylesheet" href="../assets/css/normalize/normalize.css">
-    <link rel="stylesheet" href="../assets/css/navigation.css">
-    <link rel="stylesheet" href="../assets/css/cards.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sidebard.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="../assets/css/cards.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/table.css">
-    <link rel="stylesheet" href="../assets/css/tableList.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/char.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
@@ -38,109 +40,124 @@
 </head>
 <body>
     <div class="container">
-        <div class="navigation" id="navigation">
-            <ul>
-                <!--  -->
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="skull-outline"></ion-icon></span>
-                        <span class="title">Charlies Yacniel</span>
+        <div class="sidebar" id="sidebar">
+            <div class="logo-company">
+                    <a href="#" target="blank" class="">
+                        <img class="img-logo" src="../assets/img/logo-white.svg" alt="logo"/>
                     </a>
-                </li>
-                <!--  -->
-                <li>
-                    <a href="#">
+                <span class="name-company">Charlies Yacniel</span>
+             </div>
+            <ul>
+                <li class="list-item-father">
+                    <a href="#" class="a-item-father">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="title">Inicio</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
                         <span class="title">Users</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#" class="a-item-father accordion">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                        <span class="title">Roles</span>
+                        <span class="title">Accesos</span>
                     </a>
+                    <div class="panel">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                            <span class="title">Roles</span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="title">Permisos</span>
+                        </a>
+                    </div>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
-                        <span class="title">Permisos</span>
-                    </a>
-                </li>
-                <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
                         <span class="title">Configuraci&oacute;n</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="shapes-outline"></ion-icon></span>
                         <span class="title">Tipos</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
                         <span class="title">C&oacute;digos</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
                         <span class="title">Par&aacute;metros</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father accordion">
                         <span class="icon"><ion-icon name="hand-left-outline"></ion-icon></span>
                         <span class="title">Pruebas</span>
                     </a>
+                    <div class="panel">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                            <span class="title">SMS</span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
+                            <span class="title">Mails</span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                            <span class="title">Push Notifications</span>
+                        </a>
+                    </div>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="pie-chart-outline"></ion-icon></span>
                         <span class="title">Estad&iacute;sticas</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="title">Reportes</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="#">
+                <li class="list-item-father">
+                    <a href="#"class="a-item-father">
                         <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
                         <span class="title">Other</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="./pages/mail.html">
+                <li class="list-item-father">
+                    <a href="./pages/mail.html"class="a-item-father">
                         <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
                         <span class="title">Template Mails</span>
                     </a>
                 </li>
                 <!--  -->
-                <li>
-                    <a href="./login.html">
+                <li class="list-item-father">
+                    <a href="../login.html"class="a-item-father">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="title">Cerrar Sesi&oacute;n</span>
                     </a>
@@ -151,7 +168,7 @@
 
         <!-- main -->
         <div class="main" id="main">
-            <div class="topbar" id="topbar">
+            <div class="header" id="header">
                 <!-- tpggle menu -->
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -168,25 +185,9 @@
                     </label>
                 </div>
                 <!-- input dark mode -->
-                <div class="container-dark-mode">
-                    <div class="toggleWrapper">
-                        <input type="checkbox" class="dn" id="toggle-button"/>
-                        <label for="toggle-button" class="toggleDarkMode">
-                            <span class="toggle__handler">
-                                <span class="crater crater--1"></span>
-                                <span class="crater crater--2"></span>
-                                <span class="crater crater--3"></span>
-                            </span>
-                            <span class="star star--1"></span>
-                            <span class="star star--2"></span>
-                            <span class="star star--3"></span>
-                            <span class="star star--4"></span>
-                            <span class="star star--5"></span>
-                            <span class="star star--6"></span>
-                        </label>
-                    </div>
-                    <!-- <input id="toggle-button" type="checkbox">
-                    <label for="toggle-button"><div class="sun-moon"></div></label> -->
+                <div class="container-dark-mode" id="dark-mode">
+                    <input id="toggle-button" type="checkbox">
+                    <label for="toggle-button"><div class="sun-moon"></div></label>
                 </div>
 
                 <!-- image user -->
@@ -195,13 +196,27 @@
                         <span>Hola Charlies Yacniel</span>
                         <span>Hoy es <b>14/03/2022 11:44 PM</b></span>
                     </div>
-                    <div class="userImg">
-                        <img src="../assets/img/img-user.jpeg" alt="image user" srcset="image user">
-                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle">
+                            <div class="userImg " >
+                                <img src="../assets/img/img-user.jpeg" onclick="myFunction()" class="drop-button" alt="image user" srcset="image user">
+                            </div>
+                        </div>
+                        <div id=myDropdown class="dropdown-content">
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#" onclick="onClickDropdownItem('mensajes')"><ion-icon name="chatbubbles-outline"></ion-icon><span>Mensajes</span></a></li>
+                                    <li><a href="#" onclick="onClickDropdownItem('ayuda')"><ion-icon name="help-circle-outline"></ion-icon> <span>Ayuda</span></a></li>
+                                    <li><a href="#" onclick="onClickDropdownItem('about')"><ion-icon name="earth-outline"></ion-icon> <span>Acerca de</span></a></li>
+                                    <li><a href="#" onclick="onClickDropdownItem('logout')"><ion-icon name="log-out-outline"></ion-icon> <span>Cerrar Sesi&oacute;n</span></a></li>
+                                 </ul>
+                             </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <!-- migas de pan -->
-            <div class="container">
+            <div class="container-breadcrumb">
                 <nav aria-label="Breadcrumb" class="breadcrumb" id="breadcrumb">
                   <ol>
                     <li ><a href="#" ><span itemprop="name">Inicio</span></a></li>
@@ -212,7 +227,7 @@
               </div>
             <!-- fin migas de pan -->
             <!-- cards-->
-            <div class="cardBox">
+            <div class="main-card-container">
                 <div class="card">
                     <div class="">
                         <div class="numbers">1,423</div>
@@ -257,159 +272,226 @@
             </div>
             <!-- fin de los cards -->
 
-            <!-- table  -->
-            <div class="details">
-                <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Recent Orders</h2>
-                        <a href="#" class="btn">Ver todos</a>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-title">
+                        <h2>Estad&iacute;sticas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a minima alias blanditiis veniam dicta repudiandae enim voluptas itaque cumque rem magni, nihil amet repellat odio magnam tenetur cupiditate aperiam.</p>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Actions</td>
-                                <td>Name</td>
-                                <td>Price</td>
-                                <td>Payment</td>
-                                <td>Status</td>
-                            </tr>
-                            </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                     <!-- Default Design -->
-                                    <div class="dropdown-container">
-                                        <div class="dropdown-toggle click-dropdown">
-                                            <ion-icon name="list-circle-outline"></ion-icon>
-                                            <!-- <span>Gestionar</span> -->
-                                        </div>
-                                        <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a href="#"><ion-icon name="earth-outline"></ion-icon> <span>delivered</span></a></li>
-                                            <li><a href="#"><ion-icon name="finger-print-outline"></ion-icon> <span>analysis</span></a></li>
-                                            <li><a href="#"><ion-icon name="color-palette-outline"></ion-icon> <span>denied</span></a></li>
-                                            <li><a href="#"><ion-icon name="skull-outline"></ion-icon><span>approved</span></a></li>
-                                            <li><a href="#"><ion-icon name="qr-code-outline"></ion-icon> <span>received</span></a></li>
-                                        </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$1233</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
+                    <div class="card-body">
+                        <div class="card-elements">
+                            
                             <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$938</td>
-                                <td>Paid</td>
-                                <td><span class="status analysis">analysis</span></td>
-                            </tr>
+                            <div class="card-item">
+                            asfas
+                            </div>
                             <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$387</td>
-                                <td>Paid</td>
-                                <td><span class="status denied">denied</span></td>
-                            </tr>
+                            <div class="card-item">Aqui filtro</div>
                             <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$435</td>
-                                <td>Paid</td>
-                                <td><span class="status approved">approved</span></td>
-                            </tr>
+                            <div class="card-item">
+                            Aqui drop dowm
+                            </div>
                             <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$553</td>
-                                <td>Paid</td>
-                                <td><span class="status received">received</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$675</td>
-                                <td>Paid</td>
-                                <td><span class="status paid">paid</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$7895</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$456</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$78564</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
-                            <!--  -->
-                            <tr>
-                                <td>
-                                    action booton
-                                </td>
-                                <td>Start Refrigerator</td>
-                                <td>$123</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">delivered</span></td>
-                            </tr>
-                            <!--  -->
-                        </tbody>
-                    </table>
+                            <div class="card-item">aqui va boton agregar</div>
+                            <div class="card-item">aquie ca boton subir dato</div>
+                        </div>
+                         <div class="card-table">
+                          <table>
+                                <thead>
+                                    <tr>
+                                        <td>Actions</td>
+                                        <td>Name</td>
+                                        <td>Price</td>
+                                        <td>Payment</td>
+                                        <td>Status</td>
+                                    </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                               Default Design
+                                    
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$1233</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">delivered</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$938</td>
+                                        <td>Paid</td>
+                                        <td><span class="status analysis">analysis</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$387</td>
+                                        <td>Paid</td>
+                                        <td><span class="status denied">denied</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$435</td>
+                                        <td>Paid</td>
+                                        <td><span class="status approved">approved</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$553</td>
+                                        <td>Paid</td>
+                                        <td><span class="status received">received</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$675</td>
+                                        <td>Paid</td>
+                                        <td><span class="status paid">paid</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$7895</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">delivered</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                    </div>
                 </div>
+                <!--  -->
+            </div>
 
 
-                <!-- lista de recientes -->
-                <div class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2>Recent Customers</h2>
+                <!-- other card -->
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>Estad&iacute;sticas</h2>
+                            <p>Lorem ipsum dolor, sit s! ue eius eaque ab quis molestiae nobis dicta, ducimus minima delectus voluptates ad quia rem veritatis. Repellat nemo</p>
+                        </div>
+                    <div class="card-body">
+                        <div class="stats-container">
+                            <div class="stats-item">
+                                <canvas id="myChart" ></canvas>
+                            </div>
+                            <div class="stats-item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius eaque ab quis molestiae nobis dicta, ducimus minima delectus voluptates ad quia rem veritatis. Repellat nemo eligendi aut deleniti neque!
+                            </div>
+                        </div>
+                            
                     </div>
+                    </div>
+                </div>
+                <!--  fin other card-->
+
+                <!-- cards 2 colums -->
+            <div class="card-container card-grid-two-columns">
+                <div class="card">
+                    <div class="card-title">
+                        <h2>Estad&iacute;sticas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a minima alias blanditiis veniam dicta repudiandae enim voluptas itaque cumque rem magni, nihil amet repellat odio magnam tenetur cupiditate aperiam.</p>
+                    </div>
+                    <div class="card-body">
+                         <div class="card-table">
+                          <table>
+                                <thead>
+                                    <tr>
+                                        <td>Actions</td>
+                                        <td>Name</td>
+                                        <td>Price</td>
+                                        <td>Payment</td>
+                                        <td>Status</td>
+                                    </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>prueb</td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$1233</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">delivered</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>asdtion</td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$938</td>
+                                        <td>Paid</td>
+                                        <td><span class="status analysis">analysis</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>action</td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$387</td>
+                                        <td>Paid</td>
+                                        <td><span class="status denied">denied</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$435</td>
+                                        <td>Paid</td>
+                                        <td><span class="status approved">approved</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$553</td>
+                                        <td>Paid</td>
+                                        <td><span class="status received">received</span></td>
+                                    </tr>
+                                    <!--  -->
+                                    <tr>
+                                        <td>
+                                            action booton
+                                        </td>
+                                        <td>Start Refrigerator</td>
+                                        <td>$553</td>
+                                        <td>Paid</td>
+                                        <td><span class="status received">received</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card card-table-list">
+                    <div class="card-title">
+                        <h2>Recientes</h2>
+                    </div>
+                    <div class="table-list">
                     <table>
                         <tr>
                             <td width="60px" ><div class="imgBx"><img src="../assets/img/image-woman.jpeg" alt="img" srcset="img user"></div></td>
@@ -440,41 +522,13 @@
                             <td width="60px" ><div class="imgBx"><img src="../assets/img/image-woman.jpeg" alt="img" srcset="img user"></div></td>
                             <td><h4>Enrique<br><span>Bunbury</span></h4></td>
                         </tr>
-                        <!--  -->
-                        <tr>
-                            <td width="60px" ><div class="imgBx"><img src="../assets/img/image-woman.jpeg" alt="img" srcset="img user"></div></td>
-                            <td><h4>Charlies<br><span>Yacniel</span></h4></td>
-                        </tr>
-                        <!--  -->
-                        <tr>
-                            <td width="60px" ><div class="imgBx"><img src="../assets/img/image-woman.jpeg" alt="img" srcset="img user"></div></td>
-                            <td><h4>Charlies<br><span>Yacniel</span></h4></td>
-                        </tr>
-                        <!--  -->
-                        <tr>
-                            <td width="60px" ><div class="imgBx"><img src="../assets/img/image-woman.jpeg" alt="img" srcset="img user"></div></td>
-                            <td><h4>Charlies<br><span>Yacniel</span></h4></td>
-                        </tr>
-                        <!--  -->
+                       
                     </table>
                 </div>
-                <!-- fin de liest ade recientes -->
-            </div>
-            <!-- fin table  -->
-
-            <!-- other card -->
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-title">
-                        <h2>Other cards</h2>
-                    </div>
-                   <div class="card-body">
-                         <p>Lorem ipsum dolor, sit s!</p>
-                        <canvas id="myChart" ></canvas>
-                   </div>
                 </div>
             </div>
-            <!--  fin other card-->
+                <!-- fin card 2 coumns -->
+           
 
             <!-- footer -->
             <div class="bootomBar" id="footer">
@@ -492,14 +546,14 @@
         <!-- fin del main -->
 
     </div><!-- Fin del caontainer -->
-
+    <script src="../src/js/global.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../src/js/list.js"></script>
+    <script src="../src/js/sidebard.js"></script>
     <script src="../src/js/toggle.js"></script>
     <script src="../src/js/michar.js"></script>
-    <script src="../src/js/dropdown.js"></script>
+    <script src="../src/js/header.js"></script>
     <script src="../src/js/darkmode.js"></script>
 </body>
 </html>

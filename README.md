@@ -1,5 +1,6 @@
 # `Charlies Admin`
-![CharliesTODOList](https://github.com/CharliesYacniel/panel-template/blob/develop/assets/img/screen.gif)
+![CharliesTODOList](https://github.com/CharliesYacniel/panel-template/blob/develop/assets/img/screen2.gif)
+
 Hello, welcome to Charlies todo list, a web application that helps you register your pending tasks and carry out actions on your tasks.
 Go right there by clicking [here](https://charliesyacniel.github.io/charlies-todo-list/)
 # Demo url
@@ -12,30 +13,11 @@ Check my version by clicking on this link https://charliesyacniel.github.io/char
 * public/
 * src/
     + assets/
+      - css/
       - img/
-        * imageDemo.png
-    + __ test __/
-        - components/
-          * Todos.test.js
-          * TodoItem.test.js
-          * DisplayTodos.test.js     
-         - redux/
-            * reducer.test.js
-            * store.test.js
-     + components/
-	        * Todos.js
-	        * TodoItem.js
-	        * DisplayTodos.js
-     + css/
-        * App.css
-       * index.css
-       * main.css
-      + redux/
-         - reducer.js
-         - store.js  
-      + App.js
-       + index.js
-       + setupTests.js
+      - fav/
+     + src/
+       + login.html
 * .gitignore
 * package-lock.json
  * package.json
