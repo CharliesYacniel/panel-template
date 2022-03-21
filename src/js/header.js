@@ -1,7 +1,6 @@
 /*Cuando se hace click en el botón, muestra el submenu*/
 function myFunction() {   
     //Añade una clase al elemento que tenga el id myDropdown
-    // document.getElementById("myDropdown").classList.toggle("show");
     document.getElementById("myDropdown").classList.toggle("show");
   }
   

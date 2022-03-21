@@ -1,7 +1,4 @@
-
-
-.sidebar
-{
+.sidebar{
 position: fixed;
 width: 300px;
 height: 100%;
@@ -10,13 +7,11 @@ transition: 0.5s ;
 overflow-y: scroll;
 
 }
-.sidebar.active
-{
+.sidebar.active{
 width: 65px;
 }
 
-.sidebar ul
-{
+.sidebar ul{
     position: absolute;
     top: 60px;
     left: 0;
@@ -24,27 +19,21 @@ width: 65px;
     left:0;
     width:100%;
     overflow-y: scroll;
-    /* padding-left: 10px; */
 }
 ::-webkit-scrollbar {
     display: none;
 }
 
-.sidebar ul li.list-item-father
-{
+.sidebar ul li.list-item-father{
     position : relative;
     width : 100%;
     list-style:none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    /* border-left: 10px solid transparent; */
-    
-
 }
 
 .sidebar ul li.list-item-father:hover,
-.sidebar ul li.list-item-father.hovered
-{
+.sidebar ul li.list-item-father.hovered{
 background: var(--white);
 }
 
@@ -123,7 +112,6 @@ border-radius: 50%;
 background: transparent;
 box-shadow: 35px 35px 0 10px var(--white);
 pointer-events: none;
-/* transition: .3s; */
 }
 .sidebar ul li.list-item-father:hover a.a-item-father::after,
 .sidebar ul li.list-item-father.hovered a.a-item-father::after
@@ -138,5 +126,61 @@ background: transparent;
 border-radius: 50%;
 box-shadow: 35px -35px 0 10px var(--white);
 pointer-events: none;
-/* transition: .3s; */
+}
+
+
+
+/* Acordeon */
+.accordion {
+    transition: 0.4s;
+  }
+  
+  .sidebar ul li.list-item-father:hover .accordion:after{
+    content: '\002B';
+    color: var(--green1);
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: var(--green2);
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+  }
+  .accordion:hover:after{
+    color: var(--green1);
+  }
+
+  .panel {
+    background: var(--blue1);
+    border-radius: 0px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel a{
+      color:var(--white);
+      text-decoration: none;
+      padding: 10px 0px 10px 50px;
+      display: flex;
+      align-items: center;
+  }
+  .panel a:hover{
+    color:var(--blue);
+    background: var(--green1);
+}
+.panel a .title{
+    padding-left: 15px;
+}
+
+.sidebar.active .panel a{
+    padding-left: 20px;
+}
+.sidebar.active .accordion:after{
+        content: '\002B';
+        right: 8px;
 }

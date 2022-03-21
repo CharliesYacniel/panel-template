@@ -20,17 +20,13 @@
     border-bottom: none;
    }
    .card .card-table table tbody tr:hover{
-    /* background: var(--blue1); */
-    background: #0045503d;
+    background: var(--blue1);
     color: var(--green2);
     cursor: pointer;
    }
    .card .card-table table tbody tr td {
        padding: 15px;
    }
-   /* .card .card-table table thead tr td {
-       padding: 15px;
-   } */
    .card .card-table table thead tr td:last-child{
        text-align: end;
    }
