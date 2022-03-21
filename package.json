@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/CharliesYacniel/panel-template/issues"
   },
-  "homepage": "https://github.com/CharliesYacniel/panel-template"
+  "homepage": "https://github.com/CharliesYacniel/panel-template/login.html",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
