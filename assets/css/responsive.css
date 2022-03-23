@@ -46,6 +46,7 @@
         white-space: nowrap;
     }
 }
+
 /* dispositivos moviles */
 @media (max-width:480px){
     .container-dark-mode{
@@ -74,7 +75,7 @@
     {
         width: 100%;
         left: -100%;
-        z-index: 1000;
+        /* z-index: 1000; */
     }
     .sidebar.active
     {
@@ -90,5 +91,86 @@
         right: 0;
         left: inherit;
         color: var(--white);
+    }
+}
+
+/* Iphone 7 plus */
+@media (max-width:414px){
+    .main {
+        width: 100vw;
+    }
+    .main.active {
+        left: 100vw;
+    }
+    .main.active .toggle{
+        position: fixed;
+        right: 52%;
+        top: 5px;
+        left: initial;
+        color: var(--blue);
+    }
+    
+
+    /* card */
+    .card-container{
+        width: 100vw;
+    }
+    .card-container .card {
+        width: 90vw;
+    }
+    .card .card-elements {
+        margin-top: 80px;
+    }
+ 
+    /* sidebar */
+    .sidebar ul li.list-item-father a.a-item-father {
+        width: 100vw;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .sidebar.active {
+        width: 100vw;
+    }
+
+    /* header */
+    .header {
+        width: 100vw;
+    }
+    .header .info-container span:last-child{
+        display: none;
+    }
+
+    /* tables */
+    table {
+        display: block;
+        overflow-x: auto;
+      }
+    .card-table{
+        border: 0.5px solid var(--light-2);
+        border-radius: 20px;
+    }
+    .card .card-table table thead tr {
+        color: var(--green2);
+    }
+
+    .card-container.card-grid-two-columns .card-table{
+        margin-top: 80px;
+    }
+
+    /* stats */
+
+    canvas{
+
+        display: block;
+        box-sizing: border-box;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+
+    /* footer */
+    .bootomBar{
+        width: calc(100%);
+        justify-content: space-evenly;
     }
 }
