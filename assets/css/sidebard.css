@@ -50,7 +50,7 @@ background: var(--white);
     transition: .5s ease-in;
 }
 .sidebar.active .logo-company{
-    background: var(--green1);
+    background: var(--primary-color);
 }
 .sidebar .name-company{
     text-transform: uppercase;
@@ -137,7 +137,7 @@ pointer-events: none;
   
   .sidebar ul li.list-item-father:hover .accordion:after{
     content: '\002B';
-    color: var(--green1);
+    color: var(--primary-color);
   }
 
   .accordion:after {
@@ -148,7 +148,7 @@ pointer-events: none;
     right: 30px;
   }
   .accordion:hover:after{
-    color: var(--green1);
+    color: var(--primary-color);
   }
 
   .panel {
@@ -171,7 +171,7 @@ pointer-events: none;
   }
   .panel a:hover{
     color:var(--blue);
-    background: var(--green1);
+    background: var(--primary-color);
 }
 .panel a .title{
     padding-left: 15px;

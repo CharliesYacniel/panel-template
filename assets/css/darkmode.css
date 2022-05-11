@@ -5,7 +5,7 @@
     position: relative;
     width: 70px;
     height: 36px;
-    border: 1px solid var(--green1);
+    border: 1px solid var(--primary-color);
     background: var(--blue1);
     border-radius: 30px;
     }
@@ -28,7 +28,7 @@
     }
 
     .container-dark-mode label .sun-moon {
-      background: var(--green1);
+      background: var(--primary-color);
       border-radius: 50%;
       height: 25px;
       margin: 4px;
@@ -44,7 +44,7 @@
 /* Botton dark mode */
 .container-dark-mode.dark {
   border: 1px solid var(--light-0);
-  background: var(--green1);
+  background: var(--primary-color);
 }
 .container-dark-mode.dark #toggle-button:checked + label .sun-moon{
   background: var(--blue1);

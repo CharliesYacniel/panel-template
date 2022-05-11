@@ -38,7 +38,7 @@
 }
 .card .card-title p{
   font-size: 16px;
-    color: var(--green1);
+    color: var(--primary-color);
     text-align: justify;
     letter-spacing: .5px;
 }

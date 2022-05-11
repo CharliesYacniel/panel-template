@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Glasmorphism"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Glasmorphism"
+	}
+}

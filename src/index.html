@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../assets/css/char.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
     <link rel="stylesheet" href="../assets/css/darkmode.css">
+    <link rel="stylesheet" href="../assets/css/modals.css">
     
 </head>
 <body>
@@ -226,6 +227,9 @@
                 </nav>
               </div>
             <!-- fin migas de pan -->
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
             <!-- cards-->
             <div class="main-card-container">
                 <div class="card">
@@ -546,6 +550,25 @@
         <!-- fin del main -->
 
     </div><!-- Fin del caontainer -->
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+            <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+    <script src="../src/js/idleTimer.js"></script>
     <script src="../src/js/global.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -555,5 +578,7 @@
     <script src="../src/js/michar.js"></script>
     <script src="../src/js/header.js"></script>
     <script src="../src/js/darkmode.js"></script>
+    <script src="../src/js/modals.js"></script>
+    
 </body>
 </html>

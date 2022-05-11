@@ -9,7 +9,7 @@
 
   }
   .dropdown-container .dropdown-toggle {
-    color: var(--green1);
+    color: var(--primary-color);
     background-color:var(--blue);
     padding: 1px;
     border-radius: 15px;
@@ -59,7 +59,7 @@
    .dropdown-menu a:hover,
    .dropdown-menu a:active,
    .dropdown-menu a:focus {
-    background-color: var(--green1);
+    background-color: var(--primary-color);
     color: var(--blue);
   }
   
